@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form | Html Only</title>
+</head>
+<body bgcolor="pink">
+
+    <!--FIELD SET TAG IS USED TO CREATE FIELD LEGEND IS HIS CHILD FOR TITLE OR GIVING HEADING-->
+
+    <fieldset>
+        
+              <legend><b>Basic Form</b></legend>
+              <br>
+
+              <form action="" method="">
+
+                <!--INPUT TEXT IS FOR TEXTBAR-->
+
+                <label for="uname"><b>User Name :</b></label><br>
+                <input type="text" placeholder="Enter Your Username">   <br><br><br>
+
+                <!--INPUT PASSWORD IS FOR PASSWORD-->
+
+                <label for="pass"><b>Password :</b></label><br>
+                <input type="password" placeholder="Enter Password">    <br><br><br>
+
+                <!--INPUT DATE IS FOR GIVING DATE MONTH AND YEAR-->
+
+                <label for="dob"><b>D.O.B :</b></label>
+                <input type="date">         <br><br>
+                
+                <!--TEXT AREA WILL CREATE BIG TEXT BOX-->
+
+                <label for="address">Write Your Address :</label><br>
+                <textarea name="address" id="address" cols="50" rows="10"></textarea> <br><br>
+
+                <p>Select Your Gender :</p>
+
+                <!--INPUT RADIO IS FOR RADIOBUTTON WHICH IS USED TO CHOOSE ONE THING WHEN THERE ARE MULTIPLE CHOICES-->
+
+                <input type="radio" id="gender" name="gender" value="Male" checked>
+                <label for="Male"><b>Male</b></label><br>
+                
+                <input type="radio" id="gender" name="gender" value="Female">
+                <label for="Female"><b>Female</b></label><br><br>
+
+                <!--INPUT NUMBER IS FOR DIGITS-->
+
+                <label for="age"><b>Age :</b></label>
+                <input type="number" id="age" name="age" min="18" max="36"> <br>
+                
+                <p>Choose Your Qualification :</p>
+
+                <!--INPUT CHECKBOX IS FOR CHECKBOC WHICH IS USED WHEN THERE WERE MULTIPLE CHOISES ARE THERE AND USER WANTS TO CHOOSE MULTIPLE OPTION -->
+
+                <input type="checkbox" id="degree1" name="degree1" value="bca"
+                checked>
+                <label for="degree1"><b>BCA</b></label><br>
+                
+                <input type="checkbox" id="degree2" name="degree2" value="mca">
+                <label for="degree2"><b>MCA</b></label><br>
+
+                <input type="checkbox" id="degree3" name="degree3" value="bscit">
+                <label for="degree3"><b>BSC.IT</b></label><br>
+                
+                <input type="checkbox" id="degree4" name="degree4" value="mscit">
+                <label for="degree4"><b>MSC.IT</b></label><br>
+
+                <input type="checkbox" id="degree5" name="degree5" value="btech">
+                <label for="degree5"><b>B.TECH</b></label><br>
+
+                <input type="checkbox" id="degree6" name="degree6" value="mtech">
+                <label for="degree6"><b>M.TECH</b></label><br><br><br>
+
+                <!--INPUT EMAIL IS FOR EMAIL-->
+
+                <label for="email"><b>Email ID :</b></label> &nbsp;
+                <input type="email" id="email" name="email" placeholder="Ram@gmail.com">    <br><br><br>
+
+                <label for="phno"><b>Phone No :</b></label>
+                <input type="number" id="phno" name="phno" placeholder="+919901874922"><br><br><br>
+
+
+                <label for="state"><b>State :</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                <!--SELECT AND OPTION TAG IS USED TO GIVE DROP DOWN LIST-->
+
+                <select name="state" id="state">
+
+                    <option value="#" disabled selected>--Select State--</option>
+
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="MP">MP</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Tamilnadu">Tamilnadu</option>
+                
+                </select>   <br><br><br>
+
+                <!--BY THIS TAG USERS CAN UPLOAD THIER FILES-->
+                
+                <!--SINGLE FILE-->
+
+                <label for="filephoto"><b>Upload Your Photo :</b></label>
+                <input type="file" name="filephoto" id="filephoto"><br><br><br>
+
+                <!--MULTIPLE FILES-->
+
+                <label for="document"><b>Upload Your Documents :</b></label>
+                <input type="file" name="documents" id="documents" multiple><br><br><br>
+                
+                <!--SUBMIT AND RESET BUTTON-->
+
+                <input type="submit" value="Submit"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="reset" value="Reset"><br><br><br>
+
+                <!--SUBMIT AND RESET IMAGE-->
+
+                <input type="image" alt="submit" src="https://assets.stickpng.com/images/586383c67d90850fc3ce2914.png" width="12%">
+
+                <input type="image" alt="reset" src="https://th.bing.com/th/id/R.c969d2316f8b77954023500cdad136ed?rik=b4E64RcgEkcwKg&riu=http%3a%2f%2fblogs.gartner.com%2fstephen-white%2ffiles%2f2016%2f07%2freset_button.png&ehk=KwgDpEAp8hH2NC0cXwRHnWLNdLON2m5ELQ9XhPhPDgE%3d&risl=&pid=ImgRaw&r=0" width="12%">
+            </form>
+
+
+            
+    </fieldset>
+    
+
+    
+</body>
+</html>
