@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table&List</title>
+</head>
+<body>
+    
+    <h1>UNOREDER LIST</h1>
+
+    <ul>            <!--UL MEANS UNORDERD LIST-->
+        <li>C#</li>   
+        <li>C++</li>  <!--LI MEANS LIST ITEM-->
+        <li>C</li>
+    </ul>
+
+    <ul type="circle">
+        <li>JQuery</li>
+        <li>JAVA</li>
+        <li>JAVA SCRIPT</li>
+    </ul>
+
+    <ul type="square">
+        <li>OUTPUT</li>
+        <li>INPUT</li>
+        <li>PROSESSING</li>
+    </ul>
+    
+
+
+    <h2>ORDERED LIST</h2>
+
+    <ol>  <!--OL MEANS ORDERED LIST-->
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVA SCRIPT</li>
+        <li>REACT JS</li>
+    </ol>
+
+    <ol reversed>  
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVA SCRIPT</li>
+        <li>REACT JS</li>
+    </ol>
+
+    <ol type="A">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVA SCRIPT</li>
+        <li>REACT JS</li>
+    </ol>
+
+    <ol type="a">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVA SCRIPT</li>
+        <li>REACT JS</li>
+    </ol>
+
+    <ol type="I">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVA SCRIPT</li>
+        <li>REACT JS</li>
+    </ol>
+    
+    <ol type="i">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVA SCRIPT</li>
+        <li>REACT JS</li>
+    </ol>
+
+    <hr>
+
+    <ol type="1" start="6">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVA SCRIPT</li>
+        <li>REACT JS</li>
+    </ol>
+
+    <ol type="A" start="4">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVA SCRIPT</li>
+        <li>REACT JS</li>
+    </ol>
+
+    <h3>DESCRIPTION LIST</h3>
+
+    <dl>  <!--DL MEANS DESCRIPTION LIST-->
+
+        <dt>COFEE</dt> <!--DT MEANS DESCRIPTION TYPE-->
+
+            <dd>BLACK COFEE</dd>  
+            <dd>GREEN COFEE</dd>
+
+            <!--DD MEANS DESCRIPTION DATA-->
+
+        <dt>TEA</dt>
+
+            <dd>MILK TEA</dd>
+            <dd>GREEN TEA</dd>
+
+    </dl>
+
+    <hr>
+
+    <table  border=""> 
+
+        <!-- PLZ DO NOT USE BORDER ATTRIBUTE BECAUSE IT IS DEPRECATED -->
+
+            <caption>FRONT END LANGUAGE</caption> 
+
+            <!-- FOR CAPTION CAPTION MEANS TITLE -->
+
+    <thead>     <!-- TABELS'S HEAD PART -->
+        
+            <tr>   <!--TR MEANS TABEL ROW MEANS    HORIZONTAL-->
+
+                <th>LANGUAGE</th>
+                <th>INVENTER</th>
+                <th>YEAR</th> <!--TH MEANS TABEL HEADING BY DEAFAULT BOLD TEXT CELLS-->
+            </tr>
+    </thead>
+
+
+    <tbody>
+
+        <!-- TABELS'S MAIN PART DATA-->
+        <tr>
+            <td>HTML</td>
+            <td>TIM BERNES LEE</td>
+            <td>1991</td> <!--TD MEANS TABEL DATA CELLS-->
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>HAKON WIUM LEE</td>
+            <td>1994</td> 
+        </tr>
+        <tr>
+            <td>JAVA SCRIPT</td>
+            <td>BRENDAN EICH</td>
+            <td>1995</td>
+        </tr>
+
+
+    </tbody>
+
+        
+    </table> <br><br><br><br><br><br>
+
+    <table border="">
+
+        <thead>
+            <tr>
+                <th>LANGUAGE</th>
+                <th>USEAGE</th>
+                <th>FRAMEWORK</th>
+                <th>DIFFICULTY</th>
+                <th>WHERE</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>HTML</td>
+                <td>STRUCUTRE</td>
+                <td>-</td>
+                <td>EASY</td>
+                <td rowspan="3">F <br>R <br>O <br>N <br>T <br><br> E <br>N <br>D</td> 
+
+                <!-- ROW SPAN ATTRBUTE IS USE TO MERGE ROWS PLZ DO NOT ENTER ANY EXTRA TD ON TR TABEL ROW WHICH IS MERGED BY ROW SPAN IF NOT FULLY MERGED THAN ENTER TD OK -->
+
+            </tr>
+
+            <tr>
+                <td>CSS</td>
+                <td>STYLING</td>
+                <td>BOOTSTRAP</td>
+                <td>HARD</td>
+            </tr>
+
+            <tr>
+                <td>JAVA SCRIPT</td>
+                <td>SCRIPTING AND FUNCTONALITY</td>
+                <td>REACT</td>
+                <td>VERY HARD</td>
+            </tr>
+
+            
+
+
+        </tbody>
+
+
+        <tfoot>
+
+            <tr>
+                <td colspan="5">DURATION : 6 MONTHS</td>
+
+                <!-- THE COL SPAN ATTRIBUTE IS USED TO MERGE COLOUMN PLZ DO NOT ENTER TD OR CELL IN NEXT TR -->
+               
+            </tr>
+        </tfoot>
+
+
+    </table>
+
+</body>
+</html>

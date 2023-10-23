@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+
+    <!-- FORM IS USED TO TAKE INPUT FROM USER AND SUBMIT DATA WHICH WAS ENTERED BY USER -->
+
+    <!-- FORM HAS MANY ATTRIBUTES FIRST LETS TALK ABOUT THAT
+     -->
+
+
+
+
+        <!-- action = THE ACTION ATTRIBUTE SPECIFY WHERE TO SEND DATA WHEN THE FORM IS SUBMITED.
+        WE CAN ALSO WRITE FILE LOCATION OR URL LOCATION THAT WILL PROSESS THE INPPUT CONTROL WHEN THE FORM IS SUBMITED 
+        WE CAN ALSO SPECIFY DIFFERENT WEB PAGE URL THAT HANDEL THE DATA
+
+        WE WILL GENERALLY WRITE THE BACK END SERVER FILE
+        LIKE === /action_page.php
+        # MEANS IT WILL STAY ON THE SAME WEB PAGE -->
+
+
+
+
+        <!-- method = THIS ATTRIBUTE SPECIFY HOW THE DATA WILL BE SENT TO THE SERVER
+        IT HAS 2 VALUE GET(default , UN SAFE ALSO KNOWS AS URL METHOD)FOR SIMPLE DATA
+    
+        POST (SAFE ALSO KNOWN AS HTTP REQ METHOD) FOR SENSITIVE OR PRIVACY DATA -->
+
+
+
+        <!-- enctype = WRITE THIS ONLY WHEN METHOD IS POST THIS SPECIFY HOW DATA SHOULD BE ENCODED BEFORE SENDING IT TO THE SERVER 
+        
+        IT HAS 3 VALUES application/x-www-form-urlencoded (default , ALL characters are encoded before sent (spaces are converted to “+” symbols, and special characters are converted to ASCII HEX values)
+    
+        multipart/form-data (USE THIS WHEN USER ARE UPLOADING FILES LIKE PASSPORT SIZE PHTOTO , SIGN IMAGE , DOCUMENT , PDF ETC)
+    
+        text/plain (THIS METHOD SENDS DATA WITHOUT ENCODING SO ITS NOT RECOMMANDED DON'T USE IT)  
+    
+        OK-->
+
+
+
+        <!-- target = THIS INDICATES WHERE TO DISPLAY RESPONSE AFTER SUBMITTING FORM
+        IT HAS SAME VALUE LIKE _blank _self(DEFAULT)
+        IT CAN BE TAB , WINDOW , IFRAME .-->
+
+
+
+        <!-- name = IT IS USED TO GIVE NAME TO FROM WHICH WILL BE USED LATER BY JAVASCRIPT  -->
+
+        <h1>SIMPLE FORM</h1>
+
+        <form action="/action_page.php"
+        method="post" enctype="multipart/form-data" name="form1">
+        <!--The label text is not only visually associated with its corresponding text input; it is programmatically associated with it too. This means that, for example, a screen reader will read out the label when the user is focused on the form input, making it easier for an assistive technology user to understand what data should be entered.
+
+        When a user clicks or touches/taps a label, the browser passes the focus to its associated input (the resulting event is also raised for the input). That increased hit area for focusing the input provides an advantage to anyone trying to activate it — including those using a touch-screen device.-->
+
+        
+        <!-- ALL INPUT FIELD'S ID MUST BE DIFFERERENT -->
+        
+        <!-- KEEP IN MIND THAT ID AND NAME CAN BE DIFFERENT BUT ID AND FOR VALUE MUST BE SAME FOR CONNECTED LABEL AND INPUT FIELD -->
+        
+        <!-- INPUT TAG IS USED TO MAKE VARIOUS INPUT FIELDS -->
+        
+
+
+        <label for="uname">USER NAME :</label>    <br>
+        <input type="text" id="uname" name="uname">
+        <br><br><hr>
+
+
+        
+        <label for="pass">PASSWORD :</label>    <br>
+        <input type="password" id="pass" name="pass">
+        <br><br><hr>
+
+
+        <label for="email">ENTER YOUR EMAIL :</label>    <br>
+        <input type="email" id="email" name="email">
+        <br><br><hr>
+
+
+
+        <label for="dob">D.O.B :</label>    <br>
+        <input type="date" id="dob" name="dob">
+        <br><br><hr>
+
+
+        <label for="qualification">CHOOSE YOUR QUALIFICATION :</label>  <br><br>
+
+
+        <input type="checkbox" id="degree1" name="degree1" value="bca">
+        <label for="degree1">BCA</label>    
+        <br>
+
+
+        <input type="checkbox" id="degree2" name="degree2" value="mca">
+        <label for="degree2">MCA</label>    
+        <br>
+
+
+        <input type="checkbox" id="degree3" name="degree3"
+        value="btech">
+        <label for="degree3">B.TECH</label>    
+        <br>
+
+
+        <input type="checkbox" id="degree4" name="degree4" value="mtech">
+        <label for="degree4">M.TECH</label>    
+        <br><br><hr>
+
+
+        <label for="addr">WRITE YOUR ADDRESS :</label> <br>
+        <textarea name="addr" id="addr" cols="21" rows="9"></textarea>
+        <br><br><hr>
+
+
+        <label for="pinno">PIN NO :</label>
+        <input type="number" name="pinno" id="pinno">
+        <br><br><hr>
+
+        <label for="genderchoise">SELECT YOUR GENDER :</label>  <br><br>
+
+        <input type="radio" name="gender" id="male">
+        <label for="male">MALE</label>
+        <br>
+
+        <input type="radio" name="gender" id="female">
+        <label for="female">FEMALE</label>
+        <br><br><hr>
+
+        <label for="photo">UPLOAD PASSPORT SIZE PHOTO HERE :</label>
+        <input type="file" name="photo" id="photo">
+        <br><br><hr>
+
+
+        <label for="mobileno">MOBILE NO :</label>
+        <input type="tel" name="mobileno" id="mobileno">
+        <br><br><hr>
+
+        <label for="state">STATE : </label>
+        <select name="state" id="state">
+            <option value="gujarat">GUJARAT</option>
+            <option value="mp">MP</option>
+            <option value="rajsthan">RAJSTHAN</option>
+            <option value="up">UP</option>
+            <option value="delhi">DELHI</option>
+            <option value="maharastra">MAHARASTRA</option>
+        </select>
+        <br><br><hr>
+
+        <input type="button" value="CLICK HERE" onclick="alert('I LOVE PALAK PANEER OK &#128539;')">
+        <br><br><hr>
+
+        
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        <input type="submit" value="SUBMIT">
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        <input type="reset" value="RESET"> 
+
+        <br><br><br><br><br><hr><hr><hr>
+        
+        
+        <input type="image" src="https://th.bing.com/th/id/OIP.bvjZfLyYqRBsdp6mM-QaAgAAAA?pid=ImgDet&rs=1" alt="submit" width="12%">
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <input type="image" src="https://th.bing.com/th/id/OIP.blIP51KWEIQqobXsrGfu0wHaHL?pid=ImgDet&rs=1" alt="reset" width="12%">
+
+    </form>
+
+    
+</body>
+</html>

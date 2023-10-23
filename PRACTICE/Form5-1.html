@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormWithAttributes</title>
+</head>
+<body>
+    <h2>FORM WITH  FUNCATIONAL ATTRIBUTES</h2>
+
+    <br><br><br>
+
+    <form action="">
+
+        <!-- NOTE THAT NOT ALL RESETRICATION ATTRIBUTES ARE NOT FULL PROOF YOU CAN USE JAVASCRIPT TO DO IT AND IT IS USUALLY RECOMANDED -->
+
+    <label for="uname">USER NAME :</label>    <br>
+
+    <input type="text" id="uname" name="uname" size="36" autofocus placeholder="Enter Your Name" maxlength="15"  minlength="6"   
+    required>
+    <br><br>
+
+
+        
+    <label for="pass">PASSWORD :</label>    <br>
+    <input type="password" id="pass" name="pass" placeholder="Enter Password" required >
+    <br><br>
+
+
+    <label for="email">ENTER YOUR EMAIL :</label>    <br>
+    <input type="email" id="email" name="email" placeholder="xyz@gmail.com" maxlength="36" >
+    <br><br>
+
+
+
+    <label for="dob">D.O.B :</label>    <br>
+    <input type="date" id="dob" name="dob" min="2001-12-09" max="2021-09-27"  value="2019-06-03">
+    <br><br>
+
+
+
+    <label for="procode">PROFILE CODE :</label>    <br>
+    <input type="text" id="procode" name="procode" placeholder="VAIBHA912vai" required  pattern="[A-Z]{6}[0-9]{3}[a-z]{3}">
+    <br><br>
+
+
+
+    <label for="qualification">CHOOSE YOUR QUALIFICATION :</label>  <br><br>
+
+
+    <input type="checkbox" id="degree1" name="degree1" value="bca" checked>
+    <label for="degree1">BCA</label>    
+    <br>
+
+
+    <input type="checkbox" id="degree2" name="degree2" value="mca">
+    <label for="degree2">MCA</label>    
+    <br><br>
+
+
+    <label for="state">STATE : </label>
+
+        <select name="state" id="state">
+
+            <option value="" disabled selected>--SELECT STATE--</option>
+
+            <option value="gujarat">GUJARAT</option>
+            <option value="mp">MP</option>
+            <option value="rajsthan">RAJSTHAN</option>
+            <option value="up">UP</option>
+            <option value="delhi">DELHI</option>
+            <option value="maharastra">MAHARASTRA</option>
+        </select>
+
+        <br><br><br>
+
+        <label for="photo">UPLOAD PASSPORT SIZE PHOTO HERE :</label>
+        <input type="file" name="photo" id="photo" accept="image/png, image/jpeg">
+        <br><br>
+
+        <label for="doc">UPLOAD DOCUMENTS HERE :</label>
+        <input type="file" name="doc" id="doc" multiple>
+        <br><br>
+
+
+
+
+    </form>
+    
+</body>
+</html>
